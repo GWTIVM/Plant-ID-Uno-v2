@@ -24,7 +24,7 @@
 		},
 		{
 			"src": "icons/icon-128.png",
-			"sizes": "128x128",
+			"sizes": "91x128",
 			"type": "image/png"
 		},
 		{
@@ -34,7 +34,7 @@
 		},
 		{
 			"src": "icons/icon-512.png",
-			"sizes": "512x512",
+			"sizes": "365x512",
 			"type": "image/png"
 		}
 	]
