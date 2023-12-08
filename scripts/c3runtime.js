@@ -5610,12 +5610,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Acts.LoadState,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Behaviors.Tween.Acts.TweenTwoProperties,
 		C3.Behaviors.Fade.Acts.RestartFade,
 		C3.Plugins.System.Acts.SaveState,
-		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Text.Acts.TypewriterText,
 		C3.Plugins.Text.Cnds.OnTypewriterTextFinished,
 		C3.Plugins.System.Cnds.OnLoadFinished
