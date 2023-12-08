@@ -5530,8 +5530,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Pin,
 		C3.Behaviors.Rotate,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.SetLayerVisible,
+		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.SetLayerInteractive,
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Sprite.Acts.StopAnim,
@@ -5861,9 +5861,9 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => "Zoom",
 		() => "Game Over",
 		() => 1,
-		() => "Zoom",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
