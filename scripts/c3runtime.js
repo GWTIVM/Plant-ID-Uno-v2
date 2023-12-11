@@ -6261,11 +6261,11 @@ self.C3_ExpressionFuncs = [
 		() => 0.5,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (100 / f0());
+			return () => (f0() * 100);
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (and("Loading... ", (100 / f0())) + "%");
+			return () => (and("Loading... ", (f0() * 100)) + "%");
 		}
 ];
 
