@@ -5619,7 +5619,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Text.Acts.TypewriterText,
 		C3.Plugins.Text.Cnds.OnTypewriterTextFinished,
-		C3.Plugins.System.Cnds.OnLoadFinished
+		C3.Plugins.System.Cnds.OnLoadFinished,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.progressbar.Acts.SetProgress,
+		C3.Plugins.System.Exps.loadingprogress
 	];
 };
 self.C3_JsPropNameTable = [
@@ -6255,7 +6258,15 @@ self.C3_ExpressionFuncs = [
 		() => 0.3,
 		() => 650,
 		() => "Loading...",
-		() => 0.5
+		() => 0.5,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => (100 / f0());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => (and("Loading... ", (100 / f0())) + "%");
+		}
 ];
 
 
