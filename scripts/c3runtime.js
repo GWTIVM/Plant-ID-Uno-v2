@@ -5605,6 +5605,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Arr.Acts.Delete,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
+		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
 		C3.Behaviors.MoveTo.Acts.SetAcceleration,
 		C3.Plugins.System.Cnds.Repeat,
 		C3.Plugins.System.Cnds.TriggerOnce,
